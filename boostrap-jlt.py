@@ -44,4 +44,15 @@ ggplot(boot_df, aes(x = "x")) +
 geom_histogram()
 )
 
+#%%
+
+class Boot_CI():
+    def __init__(self):
+        self.stat = "mean"
+        self.dat = None
+        self.n_boot = 0
+        self.boot_stat = None
+        self.ci_level = 0.95
+        
+test = Boot_CI()
 
